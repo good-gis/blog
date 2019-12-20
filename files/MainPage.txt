@@ -1,0 +1,61 @@
+<?php
+namespace Page;
+
+class MainPage
+{
+    // include url of current page
+    public static $URL = '/';
+
+    public static $authForm = "//button[@class='btn auth-menu__button-entry']";
+    public static $submitAuth = "//button[@class='btn auth-block__button auth-block__button_submit']";
+    public $I;
+    /**
+     * Declare UI map for this page here. CSS or XPath allowed.
+     * public static $usernameField = '#username';
+     * public static $formSubmitButton = "#mainForm input[type=submit]";
+     */
+
+    /**
+     * Basic route example for your current URL
+     * You can append any additional parameter to URL
+     * and use it in tests like: Page\Edit::route('/123-post');
+     */
+    public static function route($param)
+    {
+        return static::$URL.$param;
+    }
+
+    public function __construct(\AcceptanceTester $I)
+    {
+        $this->I = $I;
+    }
+//функция открывает форму авторизации на главной странице сайта
+    public function openAuthForm()
+    {
+        $I = $this->I;
+        $I->click (self::$authForm);
+        $I->waitForElementVisible('.auth-modal__window');
+    }
+//функция вводит логин и пароль в форме авторизации
+    public function fillSingInForm($login, $password)
+    {
+        $I = $this->I;
+        $I->fillField('login', $login);
+        $I->fillField('password', $password);
+    }
+//функция нажимает кнопку "войти" и проверяет удалось ли зайти в личный кабинет
+    public function checkLoginSucces()
+    {
+        $I = $this->I;
+        $I->click(self::$submitAuth);
+        $I->waitForElementVisible('.header__user-info .auth-user__hello');
+    }
+//функция нажимает кнопку "войти" и проверяет отображается ли текст некорретного ввода логина/пароля в форме авторизации на сайте
+    public function checkLoginFailed()
+    {
+        $I = $this->I;
+        $I->click(self::$submitAuth);
+        $I->waitForElementVisible('.auth-block__summary-error');
+    }
+
+}

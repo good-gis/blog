@@ -1,0 +1,32 @@
+<?php 
+
+class SingInTestCest
+{
+    public function _before(AcceptanceTester $I)
+    {
+    }
+
+    // tests
+    public function tryToLogin(AcceptanceTester $I)
+    {
+        $I->wantTo('Авторизоваться в личном кабинете');
+        $I->amOnPage('/'); // на главной странице
+        $I->click ('//button[@class=\'btn auth-menu__button-entry\']'); //нажимаю кнопку "войти"
+        $I->waitForElementVisible('.auth-modal__window'); //жду когда окно авторизации откроется
+        $I->fillField('login', 'testme'); //ввожу логин
+        $I->fillField('password', '123'); //ввожу пароль
+        $I->click('//button[@class=\'btn auth-block__button auth-block__button_submit\']'); //нажимаю кнопку "войти"
+        $I->waitForElementVisible('.header__user-info .auth-user__hello'); //смотрю отображается ли признак успешного входа в личный кабинет
+    }
+    public function tryToLoginInWithInvalid(AcceptanceTester $I)
+    {
+        $I->wantTo('Авторизоваться в личном кабинете c некорректными данными');
+        $I->amOnPage('/?logout');
+        $I->click ('//button[@class=\'btn auth-menu__button-entry\']'); //нажимаю кнопку "войти"
+        $I->waitForElementVisible('.auth-modal__window'); //жду когда окно авторизации "откроется"
+        $I->fillField('login', 'testme'); //ввожу логин
+        $I->fillField('password', 'wrong'); //ввожу неверный пароль
+        $I->click('//button[@class=\'btn auth-block__button auth-block__button_submit\']'); //нажимаю кнопку "войти"
+        $I->waitForElementVisible('.auth-block__summary-error'); //смотрю отображается ли текст некорректного входа в личный кабинет
+    }
+}
