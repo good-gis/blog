@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8a7f166-79bf-45e5-b27b-f5fe5f1b53b8" name="Default Changelist" comment="" />
+    <list default="true" id="a8a7f166-79bf-45e5-b27b-f5fe5f1b53b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/city43.info.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\gisgl\PhpstormProjects\city43.info\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1VFqKzPXsjYPGY6mHEkWzRJvk27" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -50,22 +65,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576859130774</updated>
-      <workItem from="1576859132797" duration="4819000" />
+      <workItem from="1576859132797" duration="5420000" />
     </task>
+    <task id="LOCAL-00001" summary="Finish project">
+      <created>1576864186928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576864186928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576859218008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1576859218008" />
-    <state x="228" y="0" key="CommitChangelistDialog2" timestamp="1576864124397">
+    <state x="228" y="0" key="CommitChangelistDialog2" timestamp="1576864184937">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="228" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576864124397" />
+    <state x="228" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576864184937" />
     <state x="49" y="55" key="DiffContextDialog" timestamp="1576864092935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -78,6 +105,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1576863995595" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1576864270381">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1576864270381" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576864127681">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
