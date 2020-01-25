@@ -31,40 +31,18 @@ p {
 .section {
 	background-color: #fff;
 	padding: 15px;
-	margin: 0;
-	margin-left: 10px;
+	margin-bottom: 10px;
 	border-radius: 10px;
-}
-.content {
-	width: 950px;
-	margin: auto;
-	display: flow-root;
-}
-.element0, .element1, .element2, .element3, .element4, .element5 {
-	width: 435px;
-	height: 200px;
-	float: left;
-	overflow: hidden;
-	margin: 10px 5px;
-}
-.element0:hover, .element1:hover, .element2:hover, .element3:hover, .element4:hover, .element5:hover {
-	cursor: pointer;
 }
 #header {
 	background-image: url("../images/ny.jpg");
 	background-size: cover;
-	height: 250px;
-	margin-bottom: 50px;
-	display: flex;
-	justify-content: flex-end;
 }
 #header img {
-	display: flex;
+	display: block;
 	width: 80px;
 	height: 80px;
-	margin: 0;
-	margin-left: 200px;
-	display: none;
+	margin: auto;
 }
 #header p {
 	font-size: 25pt;
@@ -73,12 +51,6 @@ p {
 	margin: 0;
 	font-weight: bold;
 	text-align: center;
-	display: none;
-}
-#buttom {
-	width: 450px;
-	margin-right: 180px;
-	margin-top: 150px;
 }
 .quote {
 	font-size: 12pt;
@@ -115,7 +87,7 @@ progress::-webkit-progress-bar {
 }
 progress::-webkit-progress-value {
 	background: #3fb6b2;
-} 
+}
 progress::-moz-progress-bar {
 	color: #3fb6b2;
 	background: #efefef;
@@ -203,14 +175,14 @@ a {
 	text-decoration:none;
 	user-select: none;
 }
- 
+
 /* при наведении курсора мышки */
 .nav_button:hover {
 	text-decoration:none;
 	background: #20bcd5;
 }
 /* при нажатии */
-.nav_button:active { 
+.nav_button:active {
 	text-decoration:none;
 	background: #3b464c;
 }
