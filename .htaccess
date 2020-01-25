@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+#RewriteRule ^contactme?$ contactme.php [NC, L]
+#RewriteRule ^index?$ index.php [NC, L]
+#RewriteRule ^media?$ weigth.php [NC, L]
+#RewriteRule ^myskills?$ myskills.php [NC, L]
+#RewriteRule ^resume?$ resume.php [NC, L]
+#RewriteRule ^myschedule?$ myschedule.php [NC, L]
+#RewriteRule ^404?$ 404.php [NC, L]
+
+RewriteRule ^index?$ /index.php [L]
+
+# Убираем последний слеш
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+ErrorDocument 404 /404.php

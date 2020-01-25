@@ -1,0 +1,28 @@
+<?php
+
+class SingInTestCest
+{
+    public function _before(AcceptanceTester $I)
+    {
+    }
+
+    // tests
+    //тест проверяет возможность зайти в личный кабинет с корректными данными
+    public function tryToLogin(AcceptanceTester $I, Page\MainPage $mainPage)
+    {
+        $I->wantTo('Авторизоваться в личном кабинете');
+        $I->amOnPage(Page\MainPage::$URL);
+        $mainPage->openAuthForm();
+        $mainPage->fillSingInForm('testme','123');
+        $mainPage->checkLoginSucces();
+    }
+    //тест пытается зайти в личный кабинет с некорректными данными
+    public function tryToLoginInWithInvalid(AcceptanceTester $I, Page\MainPage $mainPage)
+    {
+        $I->wantTo('Авторизоваться в личном кабинете c некорректными данными');
+        $I->amOnPage('/?logout');
+        $mainPage->openAuthForm();
+        $mainPage->fillSingInForm('testme','wrong');
+        $mainPage->checkLoginFailed();
+    }
+}
